@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== THEME VARIABLES ========== */
+:root,
+[data-theme="ocean"] {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --bg-app: #f0f6ff;
+  --bg-card: #ffffff;
+  --bg-sidebar: #0b1f3a;
+  --bg-sidebar-hover: #132f54;
+  --bg-input: #ffffff;
+  --bg-muted: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-on-primary: #ffffff;
+  --text-sidebar: #e2e8f0;
+  --text-sidebar-muted: #94a3b8;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-color: rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="midnight"] {
+  --color-primary-50: #1e3a5f;
+  --color-primary-100: #1e40af;
+  --color-primary-200: #2563eb;
+  --color-primary-300: #3b82f6;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #60a5fa;
+  --color-primary-700: #93c5fd;
+  --color-primary-800: #bfdbfe;
+  --color-primary-900: #dbeafe;
+  --bg-app: #0a1628;
+  --bg-card: #111f35;
+  --bg-sidebar: #060e1a;
+  --bg-sidebar-hover: #0f1c30;
+  --bg-input: #0f1c30;
+  --bg-muted: #0d1a2d;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --text-on-primary: #0a1628;
+  --text-sidebar: #e2e8f0;
+  --text-sidebar-muted: #64748b;
+  --border: #1e3a5f;
+  --border-strong: #2563eb;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="sky"] {
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+  --bg-app: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-sidebar: #0c4a6e;
+  --bg-sidebar-hover: #075985;
+  --bg-input: #ffffff;
+  --bg-muted: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-on-primary: #ffffff;
+  --text-sidebar: #e0f2fe;
+  --text-sidebar-muted: #7dd3fc;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-color: rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="purple"] {
+  --color-primary-50: #faf5ff;
+  --color-primary-100: #f3e8ff;
+  --color-primary-200: #e9d5ff;
+  --color-primary-300: #d8b4fe;
+  --color-primary-400: #c084fc;
+  --color-primary-500: #a855f7;
+  --color-primary-600: #9333ea;
+  --color-primary-700: #7e22ce;
+  --color-primary-800: #6b21a8;
+  --color-primary-900: #581c87;
+  --bg-app: #faf5ff;
+  --bg-card: #ffffff;
+  --bg-sidebar: #3b0764;
+  --bg-sidebar-hover: #4c1d95;
+  --bg-input: #ffffff;
+  --bg-muted: #f5f3ff;
+  --text-primary: #1e1b4b;
+  --text-secondary: #4c1d95;
+  --text-muted: #a78bfa;
+  --text-on-primary: #ffffff;
+  --text-sidebar: #f3e8ff;
+  --text-sidebar-muted: #c4b5fd;
+  --border: #e9d5ff;
+  --border-strong: #d8b4fe;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-color: rgba(88, 28, 135, 0.08);
+}
+
+[data-theme="emerald"] {
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+  --bg-app: #f0fdf4;
+  --bg-card: #ffffff;
+  --bg-sidebar: #064e3b;
+  --bg-sidebar-hover: #065f46;
+  --bg-input: #ffffff;
+  --bg-muted: #f0fdf4;
+  --text-primary: #064e3b;
+  --text-secondary: #047857;
+  --text-muted: #6ee7b7;
+  --text-on-primary: #ffffff;
+  --text-sidebar: #d1fae5;
+  --text-sidebar-muted: #6ee7b7;
+  --border: #a7f3d0;
+  --border-strong: #6ee7b7;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --shadow-color: rgba(6, 78, 59, 0.06);
+}
+
+[data-theme="darkpro"] {
+  --color-primary-50: #1f2937;
+  --color-primary-100: #374151;
+  --color-primary-200: #4b5563;
+  --color-primary-300: #6b7280;
+  --color-primary-400: #9ca3af;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #818cf8;
+  --color-primary-700: #a5b4fc;
+  --color-primary-800: #c7d2fe;
+  --color-primary-900: #e0e7ff;
+  --bg-app: #0f172a;
+  --bg-card: #1e293b;
+  --bg-sidebar: #020617;
+  --bg-sidebar-hover: #0f172a;
+  --bg-input: #1e293b;
+  --bg-muted: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --text-on-primary: #0f172a;
+  --text-sidebar: #e2e8f0;
+  --text-sidebar-muted: #64748b;
+  --border: #334155;
+  --border-strong: #475569;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+/* ========== BASE ========== */
+@layer base {
+  * {
+    @apply border-[var(--border)];
+  }
+  html {
+    @apply antialiased;
+  }
+  body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* ========== COMPONENTS ========== */
+@layer components {
+  .card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 var(--shadow-color);
+  }
+
+  .card-elevated {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px -5px var(--shadow-color);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn text-white shadow-sm hover:shadow;
+    background-color: var(--color-primary-600);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background-color: var(--color-primary-700);
+  }
+  .btn-primary:focus {
+    --tw-ring-color: var(--color-primary-500);
+  }
+
+  .btn-secondary {
+    @apply btn;
+    background-color: var(--bg-muted);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover:not(:disabled) {
+    background-color: var(--border);
+  }
+
+  .btn-ghost {
+    @apply btn;
+    background-color: transparent;
+    color: var(--text-secondary);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    background-color: var(--bg-muted);
+    color: var(--text-primary);
+  }
+
+  .btn-danger {
+    @apply btn text-white;
+    background-color: var(--danger);
+  }
+  .btn-danger:hover:not(:disabled) {
+    filter: brightness(0.9);
+  }
+
+  .input {
+    @apply w-full px-3.5 py-2.5 text-sm rounded-xl transition-all duration-200;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+  .input::placeholder {
+    color: var(--text-muted);
+  }
+  .input:focus {
+    outline: none;
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary-500) 25%, transparent);
+  }
+
+  .label {
+    @apply block text-sm font-medium mb-1.5;
+    color: var(--text-secondary);
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-ai {
+    background-color: color-mix(in srgb, var(--danger) 15%, transparent);
+    color: var(--danger);
+  }
+  .badge-human {
+    background-color: color-mix(in srgb, var(--success) 15%, transparent);
+    color: var(--success);
+  }
+  .badge-mixed {
+    background-color: color-mix(in srgb, var(--warning) 15%, transparent);
+    color: var(--warning);
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200;
+    color: var(--text-sidebar-muted);
+  }
+  .sidebar-link:hover {
+    background-color: var(--bg-sidebar-hover);
+    color: var(--text-sidebar);
+  }
+  .sidebar-link.active {
+    background-color: var(--color-primary-600);
+    color: white;
+  }
+
+  .stat-card {
+    @apply card p-5 transition-all duration-200 hover:shadow-elevated;
+  }
+
+  .skeleton {
+    @apply animate-pulse rounded-lg;
+    background-color: var(--bg-muted);
+  }
+}
+
+/* Highlight styles for analysis */
+.highlight-ai {
+  background-color: color-mix(in srgb, #3b82f6 22%, transparent);
+  border-bottom: 2px solid #3b82f6;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.highlight-human {
+  background-color: color-mix(in srgb, #10b981 18%, transparent);
+  border-bottom: 2px solid #10b981;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.highlight-ambiguous {
+  background-color: color-mix(in srgb, #f59e0b 20%, transparent);
+  border-bottom: 2px solid #f59e0b;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Transitions for theme changes */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+button, a, input, textarea, select {
+  transition-property: background-color, border-color, color, box-shadow, transform, opacity;
+}
